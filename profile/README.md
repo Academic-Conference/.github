@@ -35,8 +35,7 @@
 
 ## 저작권 및 라이선스 안내
 	•	본 저장소 내 자료의 저작권은 각 팀 또는 원저작자에게 있습니다.
-	•	별도 라이선스가 명시되지 않는 한, 모든 자료는
-참고 목적의 열람만 허용됩니다.
+	•	별도 라이선스가 명시되지 않는 한, 모든 자료는 참고 목적의 열람만 허용됩니다.
 	•	외부 제출·배포·상업적 활용은 금지됩니다.
 
 ---
@@ -45,23 +44,24 @@
 학술제 자료는 다음과 같은 방식으로 저장소에 관리됩니다.
 
 1) 프로젝트 자료 가져오기 (Repository Import)
-	•	각 팀의 GitHub 레포지토리가 있는 경우
-GitHub → Import Repository 기능을 사용하여
-Academic-Conference Organization 내부로 가져옵니다.
-	•	레포지토리 이름은 다음 규칙을 따릅니다:
-YY-기수_팀명_프로젝트명
-예: 25-2_SYNERGY_Order101
+
+- 각 팀의 GitHub 레포지토리가 있는 경우 : GitHub → Import Repository 기능을 사용하여 Academic-Conference Organization 내부로 가져옵니다.
+- 레포지토리 이름은 다음 규칙을 따릅니다:
+~~~bash
+YY-기수_Academic_도메인
+예: 25-2_Academic_F&B
+~~~
+> 각 레포지토리의 README 파일에는 학술제의 주제에 대한 간단한 설명이 들어있으면 좋습니다.
 
 2) 파일 수동 업로드 (ZIP 또는 제출 자료)
 
 외부 플랫폼에서 제출된 자료는 다음 경로로 업로드합니다.
 ~~~bash
-/projects
-   └── 25-2
-       └── TeamA/
-           ├── code/
-           ├── visualization/
-           └── slides/
+.github               ← 아카이브 설명 및 운영 문서
+25-2_Academic_F-B     ← 팀 혹은 프로젝트별 레포 1
+25-2_DArtB_Academic_AI ← 팀 혹은 프로젝트별 레포 2
+...
+(계속 추가 예정)
 ~~~
 3) 동일 팀명이 여러 번 등장할 경우
 
